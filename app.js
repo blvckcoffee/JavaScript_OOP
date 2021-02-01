@@ -12,7 +12,9 @@ class Person {
   }
   info() {
     console.log(
-      `Hello, my name is ${this.name}. I have ${this.pets} pets. I live in ${this.residence} and my hobbies are ${this.hobbies}.`
+      `Hello, my name is ${this.name}. I have ${this.pets} pets. I live in ${
+        this.residence
+      } and my hobbies are ${this.hobbies.join(' and ')}.`
     );
   }
   greeting(name = this.name) {

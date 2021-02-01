@@ -28,7 +28,7 @@ class Coder extends Person {
     this.occupation = 'Full Stack Web Developer';
   }
   greeting(name = this.name) {
-    console.log(`Hello, my name is ${name} and I am a coder.`);
+    console.log(`Hello, my name is ${name} and I am a ${this.occupation}.`);
   }
 }
 
@@ -45,9 +45,9 @@ let newCoder = new Coder('Brent', 0, 'Panama City', [
   'playing disc golf',
 ]);
 
-console.log(newPerson);
-console.log(newCoder);
-console.log(newPerson.greeting());
-console.log(newCoder.greeting());
-console.log(newPerson.info());
-console.log(newCoder.info());
+newPerson.greeting();
+newCoder.greeting();
+newPerson.info();
+newCoder.info();
+newPerson.greeting('Ben');
+newCoder.greeting('Tanner');
